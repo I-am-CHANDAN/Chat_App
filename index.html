@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Chat_App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-icon">
+            <img src="chat-icon.png" alt="">
+            <h1>Chat App</h1>
+        </div>
+        <div class="message-box">
+            <!-- <div class="incoming message">
+                <h3>user1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+            </div> -->
+            <!-- <div class="outgoing  message">
+                <h3>user2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+            </div> -->
+        </div>
+        <div class="send-btn">
+            <textarea name="message" id="textarea" class="send-message" placeholder="Send message..."
+                autofocus></textarea>
+            <i id="msgBtn" class="btn fas fa-paper-plane"></i>
+        </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
